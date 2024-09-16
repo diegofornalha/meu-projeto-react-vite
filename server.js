@@ -2,8 +2,8 @@ import { createRequestHandler } from "@remix-run/netlify";
 
 export const handler = createRequestHandler({
   getLoadContext() {
-    // Você pode adicionar dados ao contexto do loader aqui se necessário
+    // Adicione dados ao contexto do loader, se necessário
   },
-  // Se você quiser habilitar o console.log de erros no Netlify, use isso:
+  // Se quiser habilitar logs, ative isso
   enableCloudWatchLogs: true
 });

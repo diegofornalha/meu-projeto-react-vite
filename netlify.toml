@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "public" # O Remix usará o diretório `public` para servir os assets estáticos
-  functions = "netlify/functions" # Onde as Netlify Functions são armazenadas
+  publish = "public"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/*"
