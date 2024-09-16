@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "public/build"  # Diretório de publicação correto para Remix
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
