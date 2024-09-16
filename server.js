@@ -1,9 +1,5 @@
-import { createRequestHandler } from "@remix-run/netlify";
+import { createRequestHandler } from "@remix-run/vercel";
 
-export const handler = createRequestHandler({
-  getLoadContext() {
-    // Adicione dados ao contexto do loader, se necessário
-  },
-  // Se quiser habilitar logs, ative isso
-  enableCloudWatchLogs: true
+export default createRequestHandler({
+  build: require("./build")
 });
